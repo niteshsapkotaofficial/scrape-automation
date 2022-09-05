@@ -4,7 +4,7 @@ name: nepselivedatascrape
 
 on:
   schedule:
-    - cron:  '*/2 * * *'
+    - cron:  '0/2'
 
 
 jobs: 
