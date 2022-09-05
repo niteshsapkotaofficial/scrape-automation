@@ -4,7 +4,7 @@ name: nepselivedatascrape
 # Controls when the action will run.
 on:
   schedule:
-    - cron:  '0/2 * * *'
+    - cron:  '0/1 * * *'
 
 
 jobs: 
@@ -29,13 +29,13 @@ jobs:
       run: Rscript scrapelivedata.R
       
  # Add new files in data folder, commit along with other modified files, push
-    - name: Commit files
-      run: |
-        git config --local user.name actions-user
-        git config --local user.email "actions@github.com"
-        git add data/*
-        git commit -am "GH ACTION Headlines $(date)"
-        git push origin main
-      env:
-        REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-        username: github-actions
+ #   - name: Commit files
+#      run: |
+  #      git config --local user.name actions-user
+   #     git config --local user.email "actions@github.com"
+    #    git add data/*
+     #   git commit -am "GH ACTION Headlines $(date)"
+      #  git push origin main
+     # env:
+      #  REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+       # username: github-actions
