@@ -1,7 +1,7 @@
 library(tidyverse)
 library(rvest)
 library(janitor)
-library(rjson)
+library(jsonlite)
 
 #NEPSE LIVE DATA
 
@@ -22,4 +22,4 @@ live_data %>%
 
 live_data %>% clean_names() -> live_data
 
-write(live_data.paste0('data/','livePrice.json'))
+write_json(live_data,paste0('data/','Live Data','.json'))
