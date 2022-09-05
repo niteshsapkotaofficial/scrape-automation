@@ -1,6 +1,7 @@
 library(tidyverse)
 library(rvest)
 library(janitor)
+library(rjson)
 
 #NEPSE LIVE DATA
 
