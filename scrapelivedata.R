@@ -20,3 +20,5 @@ live_data %>%
   select(1:9) -> live_data
 
 live_data %>% clean_names() -> live_data
+
+write_json(live_data.paste0('data/','livePrice.json'))
