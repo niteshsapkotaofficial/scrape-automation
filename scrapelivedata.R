@@ -21,4 +21,4 @@ live_data %>%
 
 live_data %>% clean_names() -> live_data
 
-write_json(live_data.paste0('data/','livePrice.json'))
+write_json(live_data.paste0('data/livePrice.json'))
