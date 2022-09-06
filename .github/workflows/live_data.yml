@@ -3,9 +3,8 @@ name: nepselivedatascrape
 # Controls when the action will run.
 
 on:
-  schedule:
-    - cron:  '*/2 * * * *'
-  workflow_dispatch:
+  push:
+    branches: main
 
 
 jobs: 
